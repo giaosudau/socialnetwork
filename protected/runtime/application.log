@@ -1,0 +1,10 @@
+2012/03/06 11:56:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "message".' in /var/www/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/framework/web/CController.php(271): CController->missingAction('message')
+#1 /var/www/framework/web/CWebApplication.php(276): CController->run('message')
+#2 /var/www/framework/web/CWebApplication.php(135): CWebApplication->runController('site/message')
+#3 /var/www/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/socialnetwork/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/socialnetwork/index.php?r=site/message
+---
